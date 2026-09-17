@@ -179,7 +179,7 @@ def main():
 	while True:
 		expression = input("Enter expression: ")
 		if expression.strip().lower() in ("quit", "exit"):
-			print("Goodbye.")
+			print("Program finished.")
 			break
 
 		try:
