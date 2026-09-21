@@ -1,5 +1,3 @@
-"""A small recursive-descent parser for single-digit arithmetic expressions."""
-
 # Parse Error
 class ParserError(Exception):
     """An error raised when an expression does not match the grammar."""
@@ -188,7 +186,6 @@ def naive_left_to_right_evaluation(expression):
 # Ambiguity demonstration
 
 def demonstrate_ambiguity():
-    """Compare flat left-to-right evaluation with grammar-based evaluation."""
     expression = "2+3*4"
     print("=== Ambiguity Demonstration ===")
     print(f"Expression: {expression}")
