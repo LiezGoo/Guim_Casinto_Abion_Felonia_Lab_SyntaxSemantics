@@ -1,7 +1,5 @@
 # Parse Error
 class ParserError(Exception):
-    """An error raised when an expression does not match the grammar."""
-
     def __init__(self, position, reason):
         # Store both pieces so the interactive program can report useful
         # syntax diagnostics instead of only saying that parsing failed.
